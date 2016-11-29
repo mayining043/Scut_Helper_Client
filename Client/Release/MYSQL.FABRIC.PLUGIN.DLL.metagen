@@ -1,0 +1,37 @@
+  MySql.Fabric.Properties.Resources.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly MySql.Fabric.Plugin, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Struct MySql.Fabric.FabricServerModeEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MySql.Fabric.FabricServerModeEnum Offline = 0 : Public, Static, Literal, HasDefault
+    MySql.Fabric.FabricServerModeEnum Read_only = 1 : Public, Static, Literal, HasDefault
+    MySql.Fabric.FabricServerModeEnum Write_only = 2 : Public, Static, Literal, HasDefault
+    MySql.Fabric.FabricServerModeEnum Read_Write = 4 : Public, Static, Literal, HasDefault
+Struct MySql.Fabric.FabricScopeEnum: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    MySql.Fabric.FabricScopeEnum Global = 1 : Public, Static, Literal, HasDefault
+    MySql.Fabric.FabricScopeEnum Local = 2 : Public, Static, Literal, HasDefault
+Class MySql.Fabric.Extensions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    SetFabricProperties(MySqlConnection, String(Optional, HasDefault), String(Optional, HasDefault), String(Optional, HasDefault), Nullable`1(Optional, HasDefault), Nullable`1(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+Class MySql.Fabric.MySqlFabricException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
